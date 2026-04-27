@@ -33,7 +33,7 @@ Containers and virtual machines are both technologies used to isolate applicatio
 
 ## Why are containers light weight ?
 
-Containers are lightweight because they use a technology called containerization, which allows them to share the host operating system's kernel and libraries, while still providing isolation for the application and its dependencies (as there is a need for security,id both App A and B are usinf the kernel as whole, the hacker working on App A can get into App B) . This results in a smaller footprint compared to traditional virtual machines, as the containers do not need to include a full operating system. Additionally, Docker containers are designed to be minimal, only including what is necessary for the application to run, further reducing their size.
+Containers are lightweight because they use a technology called containerization, which allows them to share the host operating system's kernel and libraries, while still providing isolation for the application and its dependencies (as there is a need for security,id both App A and B are usinf the kernel as whole, the hacker working on App A can get into App B) . This results in a smaller footprint compared to traditional virtual machines, as the containers do not need to include a full operating system. Additionally, Docker containers are designed to be minimal, only including what is necessary for the application to run, further reducing their size. [they don't have the complete OS, it's partial for reasons like as isolation has to be done for security reasons]
 
 Let's try to understand this with an example:
 
@@ -63,7 +63,7 @@ To provide a better picture of files and folders that containers base images hav
 
     /root: is the home directory of the root user.
 ```
-
+Above files can't be shared to other containers, if done may lead to security issues AND that is the reason these are seperately provided to each and every container instead of it being in host where they all get it from
 
 
 ### Files and Folders that containers use from host operating system
