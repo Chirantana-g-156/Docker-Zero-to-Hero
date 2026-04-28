@@ -146,8 +146,8 @@ A Docker registry stores Docker images. `Docker Hub` is a public registry that a
 When you use the docker pull or docker run commands, the required images are pulled from your configured registry. When you use the docker push command, your image is pushed to your configured registry.
 Docker objects
 
-When you use Docker, you are creating and using images, containers, networks, volumes, plugins, and other objects. This section is a brief overview of some of those objects.
-[dockerhub is used to staore images AND github is used to store the source code]
+When you use Docker, you are creating and using images, containers, networks, volumes, plugins, and other objects. This section is a brief overview of some of those objects.  
+[dockerhub is used to staore images AND github is used to store the source code]  
 
 
 #### Dockerfile
