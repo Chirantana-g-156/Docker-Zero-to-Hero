@@ -147,6 +147,7 @@ When you use the docker pull or docker run commands, the required images are pul
 Docker objects
 
 When you use Docker, you are creating and using images, containers, networks, volumes, plugins, and other objects. This section is a brief overview of some of those objects.
+[dockerhub is used to staore images AND github is used to store the source code]
 
 
 #### Dockerfile
