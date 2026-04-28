@@ -260,7 +260,8 @@ git clone https://github.com/iam-veeramalla/Docker-Zero-to-Hero
 cd  examples
 ```
 
-### Login to Docker [Create an account with https://hub.docker.com/][can be used after docker run]
+### Login to Docker [Create an account with https://hub.docker.com/]    
+[can be used after docker run]  
 
 ```
 docker login
