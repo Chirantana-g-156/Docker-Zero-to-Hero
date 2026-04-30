@@ -1,13 +1,13 @@
-FROM node:18 AS build
+FROM node:18 AS build  
 
-WORKDIR /app
-COPY . .
-RUN npm install
+WORKDIR /app  
+COPY . .  
+RUN npm install  
 
-FROM `gcr.io/distroless/nodejs`
+FROM `gcr.io/distroless/nodejs`  
 
-COPY --from=build /app /app
+COPY --from=build /app /app  
 
-WORKDIR /app
+WORKDIR /app  
 
-CMD ["app.js"]
+CMD ["app.js"]  
