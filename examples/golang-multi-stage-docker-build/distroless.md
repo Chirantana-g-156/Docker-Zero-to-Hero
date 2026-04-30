@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . .
 RUN npm install
 
-FROM gcr.io/distroless/nodejs
+FROM `gcr.io/distroless/nodejs`
 
 COPY --from=build /app /app
 
